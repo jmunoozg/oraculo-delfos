@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+  font-family: 'greek';
+  src: local('Dalek Pinpoint Bold'), url('DalekPinpointBold.ttf') format('truetype');
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(images/IMG_2538\ \(2\).png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+.navbar h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: content-box;
+    font-family: 'greek', sans-serif;
+    margin-top: 3.5vh;
+    font-size: 30px;
+    font-weight: 200;
+    letter-spacing: 3px;
+}
+
+.boton1 {
+    position: fixed;
+    left: 43.5%;
+    top: 36%;
+    padding: 15px 45px;
+    background: #fec195;
+    font-size: 17px;
+    font-weight: 500;
+    color: #080808;
+    cursor: pointer;
+    border: 1px solid #fec195;
+    border-radius: 8px;
+    filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.2));
+    z-index: 500;
+  }
+  
+  button:hover {
+    border: 1px solid #f3b182;
+    background: linear-gradient(
+      85deg,
+      #fec195,
+      #fcc196,
+      #fabd92,
+      #fac097,
+      #fac39c
+    );
+    animation: wind 2s ease-in-out infinite;
+  }
+  
+  @keyframes wind {
+    0% {
+      background-position: 0% 50%;
+    }
+  
+    0% {
+      background-position: 50% 100%;
+    }
+  
+    0% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .icon-1 {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 25px;
+    transform-origin: 0 0;
+    transform: rotate(10deg);
+    transition: all 0.5s ease-in-out;
+    filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.3));
+    
+  }
+  
+  button:hover .icon-1 {
+    animation: slay-1 3s cubic-bezier(0.52, 0, 0.58, 1) infinite;
+    transform: rotate(10deg);
+  }
+  
+  @keyframes slay-1 {
+    0% {
+      transform: rotate(10deg);
+    }
+  
+    50% {
+      transform: rotate(-5deg);
+    }
+  
+    100% {
+      transform: rotate(10deg);
+    }
+  }
+  
+  .icon-2 {
+    position: fixed;
+    top: 0;
+    left: 25px;
+    width: 12px;
+    transform-origin: 50% 0;
+    transform: rotate(10deg);
+    transition: all 1s ease-in-out;
+    filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.5));
+  }
+  
+  button:hover .icon-2 {
+    animation: slay-2 3s cubic-bezier(0.52, 0, 0.58, 1) 1s infinite;
+    transform: rotate(0);
+  }
+  
+  @keyframes slay-2 {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    50% {
+      transform: rotate(15deg);
+    }
+  
+    100% {
+      transform: rotate(0);
+    }
+  }
+  
+  .icon-3 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 18px;
+    transform-origin: 50% 0;
+    transform: rotate(-5deg);
+    transition: all 1s ease-in-out;
+    filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.5));
+  }
+  
+  button:hover .icon-3 {
+    animation: slay-3 2s cubic-bezier(0.52, 0, 0.58, 1) 1s infinite;
+    transform: rotate(0);
+  }
+  
+  @keyframes slay-3 {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    50% {
+      transform: rotate(-5deg);
+    }
+  
+    100% {
+      transform: rotate(0);
+    }
+  }
+/* Aquí van las preguntas */
+#preguntas-container ul {
+  list-style-type: none;
+  margin-bottom: 200px;
+}
+#preguntas-container ul li{
+  margin-bottom: 20px;
+}
+#preguntas-container{
+  display: none;
+  max-height: 300px; 
+  overflow-y: auto; 
+  padding: 20px;
+  scrollbar-width: thin;
+  scrollbar-color: #a43400 #fcb148;
+}
+
+/* Media Queries */
+@media (max-width: 480px) {
+  .boton1{
+    position: fixed;
+    left: 25%;
+    padding: 3% 7%;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .boton1{
+    position: fixed;
+    left: 30%;
+
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px){
+  .boton1{
+    position: fixed;
+    left: 36%;
+
+  }
+}
+@media (min-width: 1025px) and (max-width: 1280px){
+  .boton1{
+    position: fixed;
+    left: 39%;
+
+  }
+}
+@media (min-width: 1281px) and (max-width: 1400px){
+  .boton1{
+    position: fixed;
+    left: 41%;
+
+  }
+}
+@media (max-height: 800px){
+  .boton1{
+    top: 34.9%;
+    padding: 0.8% 2.5%;
+  }
+}
