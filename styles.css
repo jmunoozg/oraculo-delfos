@@ -218,9 +218,9 @@ body{
 
 .custom-btn {
   position: absolute;
-  width: 250px; /* Ajusta el tamaño según sea necesario */
-  height: 150px; /* Ajusta el tamaño según sea necesario */
-  border-radius: 10%;
+  width: 15vw; /* Ajusta el tamaño según sea necesario */
+  height: 16vh; /* Ajusta el tamaño según sea necesario */
+  border-radius: 50%;
   background-color: #a43400;
   border: none;
   color: white;
@@ -230,33 +230,37 @@ body{
 }
 
 .botonsec1 {
-  top: 50px;
-  left: 50px;
+  top: 1vh;
+  left: 10vw;
 }
 
 .botonsec2 {
-  top: 50px;
-  right: -120%;
+  top: 30vh;
+  right: 18vw;
 }
 
 .botonsec3 {
-  bottom: 50px;
-  left: 150px;
+  bottom: 2vh;
+  left: 10vw;
 }
 
 .botonsec4 {
-  bottom: 50px;
-  right: -120%;
+  bottom: 64vh;
+  right: -50vw;
 }
 
 .botonsec5 {
-  top: calc(50% - 75px);
-  left: calc(50% - 75px);
+  top: 30vh;
+  left: 78vw;
 }
 
 .botonsec6 {
-  bottom: calc(50% - 75px);
-  left: calc(50% - 75px);
+  bottom: 2vh;
+  right: -50vw;
+}
+.botonsec7{
+  bottom: 1vh;
+  right: -19vw;
 }
 /* pregunta generica 1 */
 #texto-principal .titulo-general, 
@@ -264,6 +268,7 @@ body{
   background-color: rgb(4, 89, 117); 
   padding: 100%;
 }
+/* Aquí va el mapa */
 
 
 
