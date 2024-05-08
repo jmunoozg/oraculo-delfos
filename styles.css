@@ -33,7 +33,7 @@ body{
     top: 36%;
     padding: 15px 45px;
     background: #fec195;
-    font-size: 17px;
+    font-size: 14px;
     font-weight: 500;
     color: #080808;
     cursor: pointer;
@@ -168,6 +168,10 @@ body{
 #preguntas-container ul li{
   margin-bottom: 20px;
 }
+#preguntas-container ul li a{
+  text-decoration: none;
+  color: #080808;
+}
 #preguntas-container{
   display: none;
   max-height: 300px; 
@@ -176,6 +180,93 @@ body{
   scrollbar-width: thin;
   scrollbar-color: #a43400 #fcb148;
 }
+/* respuesta.html */
+#respuesta{
+  padding-top: 18%;
+  padding-left: 30%;
+  padding-right: 25%;
+}
+.pagina-respuesta{
+    background-color: #a43400;
+    background-image: url('images/fondo-preguntas-desplegable.jpg');
+    background-position: center;
+    background-size: 100% 100%;
+}
+.pagina-respuesta h2{
+    margin-top: -4%;
+    margin-left: -0.5%;
+    position: absolute;
+    font-family: 'greek', sans-serif;
+    font-weight: 100;
+    font-size: 1.2rem;
+}
+.pagina-respuesta p {
+  margin: 1% 10%; /* Margen superior e inferior reducido */
+  position: relative;
+}
+.container {
+  position: relative;
+  width: 600px;
+  height: 600px;
+}
+
+.container {
+  position: relative;
+  width: 600px;
+  height: 600px;
+}
+
+.custom-btn {
+  position: absolute;
+  width: 250px; /* Ajusta el tamaño según sea necesario */
+  height: 150px; /* Ajusta el tamaño según sea necesario */
+  border-radius: 10%;
+  background-color: #a43400;
+  border: none;
+  color: white;
+  font-size: 14px; /* Ajusta el tamaño de la fuente según sea necesario */
+  text-align: center;
+  line-height: 20px; /* Ajusta el espaciado de línea según sea necesario */
+}
+
+.botonsec1 {
+  top: 50px;
+  left: 50px;
+}
+
+.botonsec2 {
+  top: 50px;
+  right: -120%;
+}
+
+.botonsec3 {
+  bottom: 50px;
+  left: 150px;
+}
+
+.botonsec4 {
+  bottom: 50px;
+  right: -120%;
+}
+
+.botonsec5 {
+  top: calc(50% - 75px);
+  left: calc(50% - 75px);
+}
+
+.botonsec6 {
+  bottom: calc(50% - 75px);
+  left: calc(50% - 75px);
+}
+/* pregunta generica 1 */
+#texto-principal .titulo-general, 
+#texto-principal .texto-general {
+  background-color: rgb(4, 89, 117); 
+  padding: 100%;
+}
+
+
+
 
 /* Media Queries */
 @media (max-width: 480px) {
