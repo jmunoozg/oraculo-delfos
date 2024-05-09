@@ -2,10 +2,6 @@
     margin: 0;
     padding: 0;
 }
-@font-face {
-  font-family: 'greek';
-  src: local('Dalek Pinpoint Bold'), url('DalekPinpointBold.ttf') format('truetype');
-}
 body{
     background-image: url('foto-preguntagenerica.jpg');
     background-position: center 50%;
