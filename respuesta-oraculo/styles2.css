@@ -16,8 +16,8 @@ body{
 }
 #texto-principal h2{
     margin-bottom: 2%;
-    font-family: 'greek';
-    font-weight: 100;
+    font-family: 'arial';
+    font-weight: 200px;
 }
 .map-container {
     position: relative;
