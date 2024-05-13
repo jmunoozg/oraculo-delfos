@@ -14,19 +14,65 @@ body, html {
 }
 
 #mapa {
-  width: 100%;
-  height: 10px;
+  width: 100vw;
+  height: 100vh;
   position: relative;
+  overflow: hidden;
 }
 
 .estrella {
   position: absolute;
+  transition: transform 3s ease;
 }
 .estrella img {
   width: 30px;
   height: 30px;
+  transition: transform 1s ease;
 }
-.oraculomapa p{
-  margin-top: -20%;
+.estrella:hover img {
+  transform: scale(1.5) rotate(360deg); /* Aumenta el tamaño y rota la imagen al hacer hover */
+}
+#mapa .h2mapa {
   position: absolute;
+  top: 4%; /* Centra verticalmente */
+  left: 50%; /* Centra horizontalmente */
+  transform: translate(-50%, -50%); /* Centra perfectamente */
+  background-color: rgba(255, 255, 255, 0.0); /* Fondo transparente (puedes ajustar el valor de 0.5 según la opacidad deseada) */
+  padding: 10px;
+}
+.oraculomapa {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.fondotextomapa {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ajusta la imagen para que cubra todo el contenedor */
+}
+
+.textooraculomapa {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color:rgb(122, 91, 3); /* Color del texto */
+  width: 50%; /* Anchura del texto */
+  font-size: 1.1rem;
+  overflow-y: auto;
+}
+.titulooraculomapa{
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color:rgb(122, 91, 3); /* Color del texto */
+  width: 50%;
 }

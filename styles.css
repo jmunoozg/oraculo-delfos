@@ -41,6 +41,7 @@ body{
     border-radius: 8px;
     filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.2));
     z-index: 500;
+    
   }
   
   button:hover {
@@ -181,29 +182,37 @@ body{
   scrollbar-color: #a43400 #fcb148;
 }
 /* respuesta.html */
-#respuesta{
-  padding-top: 18%;
-  padding-left: 30%;
-  padding-right: 25%;
+.pagina-respuesta {
+  background-color: #a43400;
+  background-image: url('images/fondo-preguntas-desplegable.jpg');
+  background-position: center;
+  background-size: 100% 100%;
+  overflow: hidden; /* Oculta el desplazamiento en la página-respuesta */
 }
-.pagina-respuesta{
-    background-color: #a43400;
-    background-image: url('images/fondo-preguntas-desplegable.jpg');
-    background-position: center;
-    background-size: 100% 100%;
+
+.respuesta-contenedor {
+  overflow-y: auto; /* Habilita el desplazamiento vertical solo para el contenido desplazable */
+  max-height: calc(100vh - 25vh); /* Establece el límite de altura, ajusta según sea necesario */
+  height: 100%; /* Fuerza al contenedor a ocupar toda la altura disponible */
+  padding-top: 18%; /* Mantén el mismo espacio superior que tenías */
+  padding-left: 30%; /* Mantén el mismo espacio izquierdo que tenías */
+  padding-right: 25%; /* Mantén el mismo espacio derecho que tenías */
+  box-sizing: border-box; /* Incluye el padding en el cálculo de la altura */
 }
-.pagina-respuesta h2{
-    margin-top: -4%;
-    margin-left: -0.5%;
-    position: absolute;
-    font-family: 'greek', sans-serif;
-    font-weight: 100;
-    font-size: 1.2rem;
+
+.pagina-respuesta h2 {
+  margin-top: -15%;
+  margin-bottom: 2%;
+  margin-left: -0.5%;
+  font-family: 'greek', sans-serif;
+  font-weight: 100;
+  font-size: 1.2rem;
 }
+
 .pagina-respuesta p {
   margin: 1% 10%; /* Margen superior e inferior reducido */
-  position: relative;
 }
+
 .container {
   position: relative;
   width: 600px;
@@ -227,6 +236,11 @@ body{
   font-size: 14px; /* Ajusta el tamaño de la fuente según sea necesario */
   text-align: center;
   line-height: 20px; /* Ajusta el espaciado de línea según sea necesario */
+  transition: 1s;
+}
+.custom-btn:hover{
+  background-color: #f3b182;
+  color: #a43400;
 }
 
 .botonsec1 {
@@ -268,7 +282,37 @@ body{
   background-color: rgb(4, 89, 117); 
   padding: 100%;
 }
-/* Aquí va el mapa */
+/* bibliografia */
+.textobibliografia {
+  background-image: none; /* Anula cualquier fondo de imagen */
+  background-color: #f3b182;
+  height: 78.9vh; /* Establece un fondo plano blanco */
+  padding-top: 10vw;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  overflow-y: hidden;
+}
+.textobibliografia p{
+  padding: 2%;
+}
+.textobibliografia a{
+
+  color: #57220a;
+  font-weight:bold;
+}
+.botonbibliografia{
+  margin-left: 90vw;
+  padding: 1.2em;
+  margin-top: -1.5vh;
+  border-radius: 10px;
+  font-size: 15px;
+  background-color: #c20101;
+  border: none;
+  color: white;
+}
+.botonbibliografia:hover{
+  color: #c20101;
+}
 
 
 
