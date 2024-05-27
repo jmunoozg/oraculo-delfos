@@ -1,20 +1,49 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-body{
+
+@font-face {
+    font-family: 'regular';
+    src: local('Satoshi-Regular'), url('../fonts/Satoshi-Regular.woff2') format('truetype');
+}
+@font-face {
+    font-family: 'greek';
+    src: local('Dalek Pinpoint Bold'), url('DalekPinpointBold.ttf') format('truetype');
+  }
+
+body {
     background-image: url('foto-preguntagenerica.jpg');
     background-position: center 50%;
-    background-size: 100% 160% ;
+    
+    background-size: 100% 230%;
+    overflow: hidden;
 }
-#texto-principal{
-    padding: 10% 25%;
+
+#texto-principal {
+    position: relative;
+    padding-top: 8%;
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-bottom: 38.5%;
+    height: 93vh;
+    text-align: justify;
+    
+    box-sizing: border-box;
+    max-height: calc(100vh - 25vh);
 }
-#texto-principal h2{
+
+
+#texto-principal p {
+    font-family: 'regular';
+}
+
+#texto-principal h2 {
     margin-bottom: 2%;
     font-family: 'arial';
     font-weight: 200px;
 }
+
 .map-container {
     position: relative;
     width: 100%;
@@ -23,6 +52,7 @@ body{
     background-size: cover; /* Ajusta el tamaño de la imagen para cubrir el contenedor */
     overflow: hidden; /* Para que las estrellas no salgan de los límites del contenedor */
 }
-.mapa{
+
+.mapa {
     width: 20%;
 }

@@ -39,6 +39,7 @@ body, html {
   transform: translate(-50%, -50%); /* Centra perfectamente */
   background-color: rgba(255, 255, 255, 0.0); /* Fondo transparente (puedes ajustar el valor de 0.5 según la opacidad deseada) */
   padding: 10px;
+  font-family: 'greek';
 }
 .oraculomapa {
   position: relative;

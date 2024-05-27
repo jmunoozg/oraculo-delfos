@@ -6,6 +6,10 @@
   font-family: 'greek';
   src: local('Dalek Pinpoint Bold'), url('DalekPinpointBold.ttf') format('truetype');
 }
+@font-face{
+  font-family: 'regular';
+  src: local('Satoshi-Regular'), url('fonts/Satoshi-Regular.woff2') format('truetype');
+}
 body{
     margin: 0;
     padding: 0;
@@ -14,6 +18,7 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
+    font-family: 'regular';
 }
 .navbar h1{
     display: flex;
@@ -199,6 +204,19 @@ body{
   padding-right: 25%; /* Mantén el mismo espacio derecho que tenías */
   box-sizing: border-box; /* Incluye el padding en el cálculo de la altura */
 }
+.back-button {
+  position: absolute;
+  top: 2.5vh;
+  left: 50vw;
+  font-size: 30px;
+  color: #000; /* Cambia el color según tus preferencias */
+  text-decoration: none;
+}
+
+.back-button:hover {
+  color: #57220a; /* Cambia el color del ícono al pasar el mouse */
+}
+
 
 .pagina-respuesta h2 {
   margin-top: -15%;
@@ -211,6 +229,10 @@ body{
 
 .pagina-respuesta p {
   margin: 1% 10%; /* Margen superior e inferior reducido */
+  font-family:'regular';
+}
+.oraculo-img{
+  width: 40vw;
 }
 
 .container {
@@ -254,7 +276,7 @@ body{
 }
 
 .botonsec3 {
-  bottom: 2vh;
+  bottom: 6.5vh;
   left: 10vw;
 }
 
@@ -269,7 +291,7 @@ body{
 }
 
 .botonsec6 {
-  bottom: 2vh;
+  bottom: 6.5vh;
   right: -50vw;
 }
 .botonsec7{
@@ -302,8 +324,8 @@ body{
 }
 .botonbibliografia{
   margin-left: 90vw;
+  margin-top: -1.2vh;
   padding: 1.2em;
-  margin-top: -1.5vh;
   border-radius: 10px;
   font-size: 15px;
   background-color: #c20101;
@@ -313,9 +335,34 @@ body{
 .botonbibliografia:hover{
   color: #c20101;
 }
-
-
-
+.botonaunmas{
+  position: absolute;
+  margin-top: -6.5vh;
+  margin-left: 1vw;
+  padding: 1em;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  background-color: #c20101;
+  border: none;
+  color: white;
+}
+.textoaunmas{
+  background-image: none; /* Anula cualquier fondo de imagen */
+  background-color: #f3b182;
+  height: 140vh; /* Establece un fondo plano blanco */
+  padding-top: 5vh;
+  padding-left: 10vw;
+  padding-right: 10vw;
+ 
+}
+.textoaunmas hr{
+  border-color: #57220a;
+}
+.textoaunmas a{
+  font-size: 0.99rem;
+  color: #57220a;
+}
 
 /* Media Queries */
 @media (max-width: 480px) {
